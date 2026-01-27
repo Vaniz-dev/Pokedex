@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 8vh;
+    background: linear-gradient(90deg,rgba(174, 87, 217, 1) 0%, rgba(61, 0, 94, 1) 100%);
+    border: 2px solid;
+}
+header img{
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%);
+    height: 6%;
+}
+
+main{
+    height: 91.5vh;
+    background: linear-gradient(0deg,rgba(75, 227, 219, 1) 0%, rgba(147, 138, 255, 1) 100%);
+}
+
+.pokedex{
+    position: absolute;
+    height: clamp(50%,80%,80%);
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%);    
+}
+
+#imgPoke{
+    position: absolute;
+    height: 16%;
+    top: 36%;
+    left: 50%;
+    transform: translate(-56%);
+}
+
+.form{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 37vh;
+    bottom: 30%;
+    left: 50.2%;
+    transform: translate(-56%);
+}
+
+.input_search{
+    align-content: center;
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 3px solid #3b3b3b;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: clamp(8px,2vh,1rem);
+    box-shadow: -2px 2px 0 #888, -4px 5px 0 #333;   
+}
+
+.pokemonData{
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: clamp(8px,3vh,1.4rem);
+    bottom: 39%;
+    left: 50%;
+    transform: translate(-34%);
+}
+
+.pokeName{
+    text-transform: capitalize;
+    color: #333;
+}
+
+.pokeId{
+    color: #888;
+}
+
+.botoes{
+    position: absolute;
+    display: flex;
+    width: 37vh;
+    left: 50.2%;
+    transform: translate(-57%);
+    bottom: 18%;
+    justify-content:space-between;
+}
+
+.botoes button{
+    width: 45%;
+    padding: 5%;
+    font-size: clamp(8px,2vh,1rem);
+    outline: none;
+    border: 3px solid #3b3b3b;
+    border-radius: 15px;
+    font-weight: 600;
+    box-shadow: -2px 2px 0 #888, -4px 5px 0 #333;
+    cursor: pointer;
+    color:#3b3b3b
+}
+
+.botoes button:hover{
+    background-color: #c1c0c0;
+}
+
+.types {
+    position: absolute;
+    top: 36%;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 20vw;
+    max-width: 50px;
+    height: 3vh; 
+    max-width: 50px;
+}
+
+.types img{ 
+    position: relative;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .types {
+        left: 64%;
+    }
+}
+
+

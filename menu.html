@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- Links -->
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./CSS/styleMenu.css">
+</head>
+<body>
+    <!-- estrutura -->
+    <img src="./assets/fMenu.gif" alt="" class="fundo" >
+    <div class="itens">
+        <audio>
+            <source src="./assets/menuMusic.mp3" type="audio/mp3" id="SoundTrack">
+        </audio>
+        <img src="./assets/logoPokedex.png" alt="" class="logo">
+        <img src="./assets/logoPokedex.png" alt="" class="logom">
+        <div class="botoes">
+            <button class="search" onclick="openSearch()">Search Mode</button>
+            <button class="full">Full Pokédex</button>
+        </div>
+    </div>
+    <audio src="./assets/menuMusic.mp3" autoplay loop></audio>
+
+    <!-- Script -->
+    <script>
+
+
+        function openSearch(){
+            window.location.href = "search.html";
+        }
+        function openFull(){
+            window.location.href = "full.html";
+        }
+    </script>
+</body>
+</html>
